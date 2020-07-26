@@ -17,10 +17,16 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * 摄像头
+ *
+ * @author Mr.Wu
+ * @date 2020/7/26 12:30
+ */
 @Repository("cameraDao")
 public class CameraDaoImpl implements CameraDao {
 
-    private MongoCollection<Camera> cameraCollection = MongoDBUtils.INSTANCE.getCollection(SystemConstantUtils.SCC_CAMERA,Camera.class);
+    private MongoCollection<Camera> cameraCollection = MongoDBUtils.INSTANCE.getCollection(SystemConstantUtils.SCC_CAMERA, Camera.class);
 
     @Override
     public void save(Camera camera) {
@@ -37,7 +43,7 @@ public class CameraDaoImpl implements CameraDao {
 
     @Override
     public void deleteByCondition(Criteria condition) {
-        MongoDBUtils.INSTANCE.deleteByCondition(cameraCollection,MongoConvertUtils.criteriaConvertDocument(condition));
+        MongoDBUtils.INSTANCE.deleteByCondition(cameraCollection, MongoConvertUtils.criteriaConvertDocument(condition));
     }
 
     @Override
@@ -48,7 +54,7 @@ public class CameraDaoImpl implements CameraDao {
 
     @Override
     public Page<Camera> pageList(Criteria condition, int pageNo, int pageSize) {
-        List<Camera> cameraList = MongoDBUtils.INSTANCE.pageByCondition(cameraCollection, MongoConvertUtils.criteriaConvertDocument(condition), Filters.eq(MongoConstUtils.CREATE_TIME,-1), pageNo, pageSize, Camera.class);
+        List<Camera> cameraList = MongoDBUtils.INSTANCE.pageByCondition(cameraCollection, MongoConvertUtils.criteriaConvertDocument(condition), Filters.eq(MongoConstUtils.CREATE_TIME, -1), pageNo, pageSize, Camera.class);
         long count = getCountByCondition(condition);
         return new PageImpl<>(cameraList, new PageRequest(pageNo - 1, pageSize), count);
     }
@@ -65,6 +71,6 @@ public class CameraDaoImpl implements CameraDao {
 
     @Override
     public Camera findByName(String name) {
-        return MongoDBUtils.INSTANCE.findOneByCondition(cameraCollection, Filters.eq(MongoConstUtils.NAME,name), Camera.class);
+        return MongoDBUtils.INSTANCE.findOneByCondition(cameraCollection, Filters.eq(MongoConstUtils.NAME, name), Camera.class);
     }
 }
