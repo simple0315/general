@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/general.iml" filepath="$PROJECT_DIR$/general.iml" />
       <module fileurl="file://$PROJECT_DIR$/scc-dao/scc-dao.iml" filepath="$PROJECT_DIR$/scc-dao/scc-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/scc-model/scc-model.iml" filepath="$PROJECT_DIR$/scc-model/scc-model.iml" />

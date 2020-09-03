@@ -8,14 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="scc-model" />
-        <module name="scc-dao" />
-        <module name="scc-utils" />
         <module name="scc-service" />
+        <module name="scc-utils" />
+        <module name="scc-dao" />
         <module name="scc-config" />
+        <module name="demo" />
         <module name="scc-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="general" target="1.8" />
       <module name="scc-config" target="1.8" />
       <module name="scc-dao" target="1.8" />
@@ -28,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="" />
       <module name="scc-config" options="-parameters" />
       <module name="scc-dao" options="" />
       <module name="scc-model" options="" />
