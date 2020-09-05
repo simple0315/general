@@ -1,13 +1,9 @@
 package com.simple.general.filter;
 
 
-import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.stereotype.Component;
-
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
@@ -24,7 +20,7 @@ public class CharsetFilter implements Filter {
     private String filterName;
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
         filterName = filterConfig.getFilterName();
         String charset = filterConfig.getInitParameter("charset");
         System.out.println("过滤器名称:" + filterName);
