@@ -7,37 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="scc-model" />
         <module name="scc-service" />
         <module name="scc-utils" />
         <module name="scc-dao" />
-        <module name="scc-config" />
-        <module name="demo" />
+        <module name="scc-demo" />
+        <module name="scc-model" />
         <module name="scc-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="1.8" />
       <module name="general" target="1.8" />
-      <module name="scc-config" target="1.8" />
       <module name="scc-dao" target="1.8" />
+      <module name="scc-demo" target="1.8" />
       <module name="scc-model" target="1.8" />
       <module name="scc-service" target="1.8" />
       <module name="scc-utils" target="1.8" />
       <module name="scc-web" target="1.8" />
-      <module name="simple" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="" />
-      <module name="scc-config" options="-parameters" />
-      <module name="scc-dao" options="" />
-      <module name="scc-model" options="" />
-      <module name="scc-service" options="" />
-      <module name="scc-utils" options="" />
-      <module name="scc-web" options="" />
-      <module name="simple" options="-parameters" />
-    </option>
   </component>
 </project>
