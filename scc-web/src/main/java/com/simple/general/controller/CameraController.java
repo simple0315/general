@@ -2,6 +2,7 @@ package com.simple.general.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.entity.Camera;
 import com.simple.general.exception.ParameterException;
 import com.simple.general.group.SaveGroup;
@@ -54,7 +55,6 @@ public class CameraController {
     public ResponseResult saveCamera(@Validated(SaveGroup.class) @RequestBody Camera camera, HttpServletRequest request, HttpSession session) {
         cameraService.saveCamera(camera);
         systemLogService.saveOperateLog(request, session, OPERATION, "添加摄像头");
-
         return ResponseResult.simpleOk();
     }
 
@@ -66,6 +66,7 @@ public class CameraController {
      * @author Mr.Li
      * @date 2020/5/16 21:10
      */
+//    @OperationLogDetail(operation = OPERATION, detail = "修改摄像头")
     @RequiresPermissions("camera:update")
     @PutMapping("/manage")
     public ResponseResult updateCamera(@Validated(UpdateGroup.class) @RequestBody Camera camera, HttpServletRequest request, HttpSession session) {
@@ -92,7 +93,6 @@ public class CameraController {
         }
         cameraService.deleteCamera(JSONArray.parseArray(ids.toJSONString(), Integer.class));
         systemLogService.saveOperateLog(request, session, OPERATION, "删除摄像头");
-
         return ResponseResult.simpleOk();
     }
 

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="interceptor">
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/annotation/OperationLogDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/mongo/MongoDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/springboot/BootDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/controller/CameraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/controller/CameraController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -235,7 +237,8 @@
       <workItem from="1599479921937" duration="1969000" />
       <workItem from="1599577406850" duration="2920000" />
       <workItem from="1599661732037" duration="1820000" />
-      <workItem from="1599665115223" duration="750000" />
+      <workItem from="1599665115223" duration="5207000" />
+      <workItem from="1599671225378" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="摄像头注释信息">
       <created>1595738154233</created>
@@ -265,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599661894852</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="interceptor">
+      <created>1599666089689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599666089689</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,20 +309,21 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="591" y="319" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.975@0.23.1680.975" timestamp="1599323305109" />
-    <state x="417" y="71" key="CommitChangelistDialog2" timestamp="1599661894626">
+    <state x="417" y="71" key="CommitChangelistDialog2" timestamp="1599666089396">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.971@0.23.1680.971" timestamp="1595738153932" />
     <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1599388936755" />
-    <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1599661894626" />
+    <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1599666089396" />
     <state x="619" y="440" key="DetectedRootsChooserDialog" timestamp="1599323384523">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="619" y="440" key="DetectedRootsChooserDialog/0.23.1680.975@0.23.1680.975" timestamp="1599323384523" />
-    <state x="168" y="100" key="DiffContextDialog" timestamp="1599145490417">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="168" y="100" key="DiffContextDialog" timestamp="1599666078386">
+      <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="168" y="100" key="DiffContextDialog/0.23.1680.973@0.23.1680.973" timestamp="1599145490417" />
+    <state x="168" y="100" key="DiffContextDialog/0.23.1680.975@0.23.1680.975" timestamp="1599666078386" />
     <state width="1638" height="316" key="GridCell.Tab.0.bottom" timestamp="1599588600598">
       <screen x="0" y="23" width="1680" height="976" />
     </state>
