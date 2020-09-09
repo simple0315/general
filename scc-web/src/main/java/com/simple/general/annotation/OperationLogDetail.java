@@ -2,12 +2,17 @@ package com.simple.general.annotation;
 
 import com.mongodb.client.model.changestream.OperationType;
 
+import java.lang.annotation.*;
+
 /**
  * operateLog
  *
  * @author Mr.Wu
  * @date 2020/9/9 23:54
  */
+@Documented
+@Target({ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
 public @interface OperationLogDetail {
 
     /**
