@@ -8,212 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="filter">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_coobird_thumbnailator_0_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_12_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_12_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_encoder_encoder_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_10_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-config/general.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-config/general.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/EquipmentDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/ImageInfoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/NoteDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/OperateLogDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/PermissionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/RepositoryDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/RoleDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/UserLogDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/EquipmentDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/ImageInfoDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/NoteDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/OperateLogDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/PermissionDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/RepositoryDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/RoleDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/UserLogDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/mongo/MongoConvertUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/mongo/MongoDBUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/scc-dao-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/scc-dao-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/DemoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/demo/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/kafaka/KafakaDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/mongo/MongoDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/mysql/MysqlDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/rabbit/RabbitDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/redis/RedisDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/spring/SpringDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/test/TestDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/thread/RunnableDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/thread/ThreadDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-demo/target/test-classes/com/simple/general/demo/DemoApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Equipment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/ImageInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Note.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/OperateLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Permission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/UserLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/exception/ParameterException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/exception/UserLoginException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/DeleteGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/QueryGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/SaveGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/UpdateGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/query/ImageQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/response/ResponseEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/response/ResponseResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/vo/UserVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/scc-model-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/scc-model-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/DataInitService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/EquipmentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/ImageInfoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/NoteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/PermissionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/RepositoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/RoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/SystemLogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/DataInitServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/EquipmentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/ImageInfoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/NoteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/PermissionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/RepositoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/RoleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/SystemLogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/scc-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/scc-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/DateUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/IpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/MD5Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/MongoConstUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/PropValUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/RedisUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/SystemConfigUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/SystemConstantUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/scc-utils-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/scc-utils-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/GeneralWebApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/config/ShiroConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/EquipmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/ImageInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/NoteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/PermissionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/RepositoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/RoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/SystemLogController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/filter/LoginAuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/filter/RestFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/filter/WebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/hander/GlobalException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/shiro/CustomRealm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/task/DataInitTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/config/general.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/static/permission.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/scc-web-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="filter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -395,7 +190,7 @@
       <workItem from="1599467264163" duration="263000" />
       <workItem from="1599468155059" duration="19866000" />
       <workItem from="1599644848635" duration="1604000" />
-      <workItem from="1599646473638" duration="2168000" />
+      <workItem from="1599646473638" duration="2823000" />
     </task>
     <task id="LOCAL-00001" summary="摄像头注释信息">
       <created>1595738154233</created>
@@ -425,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599663005197</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="filter">
+      <created>1599663270806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599663270806</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,6 +364,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599643932633" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1599663548754">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599663548754" />
+    <state x="595" y="280" key="MultipleFileMergeDialog" timestamp="1599663548767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="280" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599663548767" />
     <state x="535" y="258" key="NewModule_or_Project.wizard" timestamp="1599466332296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -578,6 +388,10 @@
     </state>
     <state x="651" y="230" width="628" height="559" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1599617178843" />
     <state x="570" y="239" width="549" height="524" key="StructurePopup/0.23.1680.975@0.23.1680.975" timestamp="1599151726367" />
+    <state x="652" y="278" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1599663324944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="278" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1920.1040@0.0.1920.1040" timestamp="1599663324944" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2" timestamp="1599312700122">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
