@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class Demo {
 
-    @GetMapping("/demo")
-    public void test() {
+    @GetMapping("/filter")
+    public void filter() {
         System.out.println("testDoFilter()");
+    }
+
+    @GetMapping("/interceptor")
+    public void interceptor() {
+        System.out.println("testInterceptor()");
     }
 
 }
