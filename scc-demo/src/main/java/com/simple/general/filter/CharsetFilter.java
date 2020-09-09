@@ -25,7 +25,6 @@ public class CharsetFilter implements Filter {
         String charset = filterConfig.getInitParameter("charset");
         System.out.println("过滤器名称:" + filterName);
         System.out.println("字符集编码:" + charset);
-
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.simple.general.demo;
 
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class Demo {
 
     @GetMapping("/demo")
-    public void test() {
+    public JSONObject test() {
         System.out.println("testDoFilter()");
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", "tom");
+        jsonObject.put("age", "1");
+        return jsonObject;
     }
 
 }

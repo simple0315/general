@@ -1,7 +1,5 @@
 package com.simple.general.thread;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.*;
 
 /**
