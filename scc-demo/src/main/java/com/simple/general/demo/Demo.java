@@ -1,6 +1,5 @@
 package com.simple.general.demo;
 
-import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +15,11 @@ public class Demo {
         jsonObject.put("name", "tom");
         jsonObject.put("age", "1");
         return jsonObject;
+    }
+
+    @GetMapping("/interceptor")
+    public void interceptor() {
+        System.out.println("testInterceptor()");
     }
 
 }
