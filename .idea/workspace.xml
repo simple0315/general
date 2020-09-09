@@ -3,15 +3,15 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/thread/ThreadDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="filter">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" beforeDir="false" />
@@ -93,63 +93,126 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_0_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/collec/CollectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/collec/CollectDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/demo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/demo/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/filter/CharsetFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/filter/CharsetFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/kafaka/KafakaDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/kafaka/KafakaDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/mongo/MongoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/mongo/MongoDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/mysql/MysqlDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/mysql/MysqlDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/rabbit/RabbitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/rabbit/RabbitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/redis/RedisDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/redis/RedisDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/spring/SpringDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/spring/SpringDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/springboot/BootDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/springboot/BootDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/springcloud/CloudDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/springcloud/CloudDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/test/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/java/com/simple/general/test/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/simple/general/thread/ThreadDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/simple/general/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/src/test/java/com/simple/general/demo/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/DemoApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/collec/CollectDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/collec/CollectDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/demo/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/demo/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/filter/CharsetFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/filter/CharsetFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/kafaka/KafakaDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/kafaka/KafakaDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/mongo/MongoDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/mongo/MongoDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/mysql/MysqlDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/mysql/MysqlDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/rabbit/RabbitDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/rabbit/RabbitDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/redis/RedisDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/redis/RedisDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/spring/SpringDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/spring/SpringDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/springboot/BootDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/springboot/BootDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/springcloud/CloudDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/springcloud/CloudDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/test/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/test/TestDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/simple/general/thread/ThreadDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/thread/ThreadDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/test-classes/com/simple/general/demo/DemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/target/test-classes/com/simple/general/demo/DemoApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-config/general.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-config/general.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/EquipmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/ImageInfoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/NoteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/OperateLogDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/PermissionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/RepositoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/RoleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/UserLogDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/EquipmentDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/ImageInfoDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/NoteDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/OperateLogDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/PermissionDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/RepositoryDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/RoleDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/dao/impl/UserLogDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/mongo/MongoConvertUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-dao/target/classes/com/simple/general/mongo/MongoDBUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-dao/target/scc-dao-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-dao/target/scc-dao-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/DemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/demo/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/kafaka/KafakaDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/mongo/MongoDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/mysql/MysqlDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/rabbit/RabbitDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/redis/RedisDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/spring/SpringDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/test/TestDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/thread/RunnableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/classes/com/simple/general/thread/ThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-demo/target/test-classes/com/simple/general/demo/DemoApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Equipment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/ImageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/OperateLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/entity/UserLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/exception/ParameterException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/exception/UserLoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/DeleteGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/QueryGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/SaveGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/group/UpdateGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/query/ImageQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/response/ResponseEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/response/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-model/target/classes/com/simple/general/vo/UserVO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-model/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-model/target/scc-model-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-model/target/scc-model-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/DataInitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/EquipmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/ImageInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/NoteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/PermissionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/RepositoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/SystemLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/DataInitServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/EquipmentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/ImageInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/NoteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/PermissionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/RepositoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/SystemLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-service/target/classes/com/simple/general/service/impl/UserServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-service/target/scc-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-service/target/scc-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/IpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/MD5Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/MongoConstUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/PropValUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/RedisUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/SystemConfigUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-utils/target/classes/com/simple/general/utils/SystemConstantUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-utils/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scc-utils/target/scc-utils-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-utils/target/scc-utils-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-web/target/scc-web-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/target/scc-web-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-web/src/main/java/com/simple/general/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/GeneralWebApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/config/ShiroConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/EquipmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/ImageInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/NoteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/PermissionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/RepositoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/SystemLogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/filter/LoginAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/filter/RestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/filter/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/hander/GlobalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/shiro/CustomRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/com/simple/general/task/DataInitTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/config/general.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/classes/static/permission.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-web/target/scc-web-0.0.1-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,17 +227,23 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="D:\JetBrains\IntelliJ IDEA 2020.1.4\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1fD0ZVtLcHCE0OTbykTUfsko7t5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -182,6 +251,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -198,84 +268,17 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
-  <component name="RunManager" selected="Application.CallableDemo">
-    <configuration name="CallableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simple.general.thread.CallableDemo" />
-      <module name="scc-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simple.general.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunnableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simple.general.thread.RunnableDemo" />
-      <module name="scc-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simple.general.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simple.general.thread.Test" />
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simple.general.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simple.general.thread.ThreadDemo" />
-      <module name="scc-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simple.general.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simple.general.thread.test" />
-      <module name="scc-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simple.general.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -330,6 +333,7 @@
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="scc-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.simple.general.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,15 +345,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CallableDemo" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.ThreadDemo (1)" />
-        <item itemvalue="Application.RunnableDemo" />
-        <item itemvalue="Application.Test (1)" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Spring Boot.GeneralWebApplication" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
@@ -393,6 +392,10 @@
       <workItem from="1599324789781" duration="84000" />
       <workItem from="1599324885305" duration="133000" />
       <workItem from="1599325029670" duration="373000" />
+      <workItem from="1599467264163" duration="263000" />
+      <workItem from="1599468155059" duration="19866000" />
+      <workItem from="1599644848635" duration="1604000" />
+      <workItem from="1599646473638" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="摄像头注释信息">
       <created>1595738154233</created>
@@ -408,11 +411,37 @@
       <option name="project" value="LOCAL" />
       <updated>1599312696885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="filter">
+      <created>1599662938002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599662938002</updated>
+    </task>
+    <task id="LOCAL-00004" summary="filter">
+      <created>1599663005197</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599663005197</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="摄像头注释信息" />
@@ -424,10 +453,22 @@
       <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="474" y="185" key="#Inspections/0.23.1680.973@0.23.1680.973" timestamp="1599318297593" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1599448573096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1599448573096" />
+    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599646689866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="0" width="1092" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599646689866" />
     <state x="653" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1599318937337">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="653" y="223" key="#com.intellij.ide.util.MemberChooser/0.23.1680.973@0.23.1680.973" timestamp="1599318937337" />
+    <state x="689" y="321" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599645302152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="321" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599645302152" />
     <state x="516" y="148" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1599151109930">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -449,70 +490,93 @@
       <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="168" y="100" key="DiffContextDialog/0.23.1680.973@0.23.1680.973" timestamp="1599145490417" />
-    <state width="1638" height="227" key="GridCell.Tab.0.bottom" timestamp="1599325226274">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state x="690" y="256" key="FileChooserDialogImpl" timestamp="1599646687750">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="256" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599646687750" />
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1599662893280">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893280" />
     <state width="1638" height="256" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1599318701792" />
     <state width="1638" height="227" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1599325226274" />
-    <state width="1638" height="227" key="GridCell.Tab.0.center" timestamp="1599325226273">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1599662893280">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893280" />
     <state width="1638" height="256" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1599318701791" />
     <state width="1638" height="227" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1599325226273" />
-    <state width="1638" height="227" key="GridCell.Tab.0.left" timestamp="1599325226273">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1599662893279">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893279" />
     <state width="1638" height="256" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1599318701790" />
     <state width="1638" height="227" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1599325226273" />
-    <state width="1638" height="227" key="GridCell.Tab.0.right" timestamp="1599325226274">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1599662893280">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893280" />
     <state width="1638" height="256" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1599318701791" />
     <state width="1638" height="227" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1599325226274" />
-    <state width="1638" height="316" key="GridCell.Tab.1.bottom" timestamp="1599150728026">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.1.bottom" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.1.bottom/0.23.1680.975@0.23.1680.975" timestamp="1599150728026" />
-    <state width="1638" height="316" key="GridCell.Tab.1.center" timestamp="1599150728025">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.1.center" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.1.center/0.23.1680.975@0.23.1680.975" timestamp="1599150728025" />
-    <state width="1638" height="316" key="GridCell.Tab.1.left" timestamp="1599150728025">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.1.left" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.1.left/0.23.1680.975@0.23.1680.975" timestamp="1599150728025" />
-    <state width="1638" height="316" key="GridCell.Tab.1.right" timestamp="1599150728025">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.1.right" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.1.right/0.23.1680.975@0.23.1680.975" timestamp="1599150728025" />
-    <state width="1638" height="316" key="GridCell.Tab.2.bottom" timestamp="1599150728026">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.2.bottom" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.2.bottom/0.23.1680.975@0.23.1680.975" timestamp="1599150728026" />
-    <state width="1638" height="316" key="GridCell.Tab.2.center" timestamp="1599150728026">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.2.center" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.2.center/0.23.1680.975@0.23.1680.975" timestamp="1599150728026" />
-    <state width="1638" height="316" key="GridCell.Tab.2.left" timestamp="1599150728026">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.2.left" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.2.left/0.23.1680.975@0.23.1680.975" timestamp="1599150728026" />
-    <state width="1638" height="316" key="GridCell.Tab.2.right" timestamp="1599150728026">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state width="1877" height="278" key="GridCell.Tab.2.right" timestamp="1599662893281">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599662893281" />
     <state width="1638" height="316" key="GridCell.Tab.2.right/0.23.1680.975@0.23.1680.975" timestamp="1599150728026" />
-    <state x="468" y="264" key="NewModule_or_Project.wizard" timestamp="1599317349002">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1599643932633">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599643932633" />
+    <state x="535" y="258" key="NewModule_or_Project.wizard" timestamp="1599466332296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="535" y="258" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1599466332296" />
     <state x="468" y="264" key="NewModule_or_Project.wizard/0.23.1680.973@0.23.1680.973" timestamp="1599317349002" />
-    <state x="341" y="139" key="SettingsEditor" timestamp="1599324936228">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state x="390" y="124" key="SettingsEditor" timestamp="1599646738313">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="390" y="124" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599646738313" />
     <state x="341" y="139" key="SettingsEditor/0.23.1680.973@0.23.1680.973" timestamp="1599317499434" />
     <state x="341" y="139" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1599324936228" />
-    <state x="570" y="239" width="549" height="524" key="StructurePopup" timestamp="1599151726367">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state x="651" y="230" width="628" height="559" key="StructurePopup" timestamp="1599617178843">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="651" y="230" width="628" height="559" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1599617178843" />
     <state x="570" y="239" width="549" height="524" key="StructurePopup/0.23.1680.975@0.23.1680.975" timestamp="1599151726367" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2" timestamp="1599312700122">
       <screen x="0" y="23" width="1680" height="973" />
@@ -524,6 +588,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="638" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.975@0.23.1680.975" timestamp="1599151057123" />
+    <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1599459003061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="252" width="596" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599459003061" />
     <state x="627" y="406" key="git4idea.ui.GitStashDialog" timestamp="1599146065405">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -536,9 +604,14 @@
       <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="318" y="163" key="new project wizard/0.23.1680.973@0.23.1680.973" timestamp="1598635797054" />
-    <state x="505" y="232" width="670" height="676" key="search.everywhere.popup" timestamp="1599151708422">
-      <screen x="0" y="23" width="1680" height="975" />
+    <state x="577" y="223" width="766" height="722" key="search.everywhere.popup" timestamp="1599617023301">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="577" y="223" width="766" height="722" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599617023301" />
     <state x="505" y="232" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1599151708422" />
+    <state x="640" y="202" key="spring file set editor" timestamp="1599645209615">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="202" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1599645209615" />
   </component>
 </project>
