@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class Demo {
 
-    @GetMapping("/filter")
-    public void filter() {
+    @GetMapping("/demo")
+    public JSONObject test() {
         System.out.println("testDoFilter()");
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", "tom");
+        jsonObject.put("age", "1");
+        return jsonObject;
     }
 
     @GetMapping("/interceptor")

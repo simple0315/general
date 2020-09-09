@@ -12,6 +12,10 @@
     <artifactId>scc-web</artifactId>
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.simple</groupId>
             <artifactId>scc-model</artifactId>
             <version>${project.version}</version>
