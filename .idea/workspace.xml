@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="filter" />
+    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +69,19 @@
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="scc-demo" />
       <option name="VM_PARAMETERS" />
@@ -216,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599663270806</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="filter">
+      <created>1599675042390</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599675042390</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,11 +290,12 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="591" y="319" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.975@0.23.1680.975" timestamp="1599323305109" />
-    <state x="417" y="71" key="CommitChangelistDialog2" timestamp="1599312696674">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="417" y="71" key="CommitChangelistDialog2" timestamp="1599675042200">
+      <screen x="0" y="23" width="1680" height="976" />
     </state>
     <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.971@0.23.1680.971" timestamp="1595738153932" />
     <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1599312696674" />
+    <state x="417" y="71" key="CommitChangelistDialog2/0.23.1680.976@0.23.1680.976" timestamp="1599675042200" />
     <state x="619" y="440" key="DetectedRootsChooserDialog" timestamp="1599323384523">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -381,12 +404,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="652" y="278" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1920.1040@0.0.1920.1040" timestamp="1599663324944" />
-    <state x="440" y="240" key="Vcs.Push.Dialog.v2" timestamp="1599312700122">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="440" y="241" key="Vcs.Push.Dialog.v2" timestamp="1599675044441">
+      <screen x="0" y="23" width="1680" height="976" />
     </state>
     <state x="440" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.971@0.23.1680.971" timestamp="1595738165018" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1599312700122" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1599146370433" />
+    <state x="440" y="241" key="Vcs.Push.Dialog.v2/0.23.1680.976@0.23.1680.976" timestamp="1599675044441" />
     <state x="638" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599151057123">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
