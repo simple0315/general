@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="filter" />
+    <list default="true" id="f098e2ba-0b47-4f2b-84eb-de789db0c218" name="Default Changelist" comment="filter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +34,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="D:\JetBrains\IntelliJ IDEA 2020.1.4\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -67,6 +69,17 @@
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="scc-demo" />
       <option name="VM_PARAMETERS" />
@@ -381,9 +394,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="652" y="278" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1920.1040@0.0.1920.1040" timestamp="1599663324944" />
-    <state x="440" y="240" key="Vcs.Push.Dialog.v2" timestamp="1599312700122">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="503" y="232" key="Vcs.Push.Dialog.v2" timestamp="1599675354760">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="503" y="232" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599675354760" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.971@0.23.1680.971" timestamp="1595738165018" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1599312700122" />
     <state x="440" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1599146370433" />
