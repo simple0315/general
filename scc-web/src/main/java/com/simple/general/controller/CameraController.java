@@ -50,11 +50,12 @@ public class CameraController {
      * @author Mr.Li
      * @date 2020/5/16 21:10
      */
+    @OperationLogDetail(operation = OPERATION, detail = "添加摄像头")
     @RequiresPermissions("camera:save")
     @PostMapping("/manage")
     public ResponseResult saveCamera(@Validated(SaveGroup.class) @RequestBody Camera camera, HttpServletRequest request, HttpSession session) {
         cameraService.saveCamera(camera);
-        systemLogService.saveOperateLog(request, session, OPERATION, "添加摄像头");
+//        systemLogService.saveOperateLog(request, session, OPERATION, "添加摄像头");
         return ResponseResult.simpleOk();
     }
 
@@ -66,13 +67,12 @@ public class CameraController {
      * @author Mr.Li
      * @date 2020/5/16 21:10
      */
-//    @OperationLogDetail(operation = OPERATION, detail = "修改摄像头")
+    @OperationLogDetail(operation = OPERATION, detail = "修改摄像头")
     @RequiresPermissions("camera:update")
     @PutMapping("/manage")
     public ResponseResult updateCamera(@Validated(UpdateGroup.class) @RequestBody Camera camera, HttpServletRequest request, HttpSession session) {
         cameraService.updateCamera(camera);
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改摄像头");
-
+//        systemLogService.saveOperateLog(request, session, OPERATION, "修改摄像头");
         return ResponseResult.simpleOk();
     }
 
