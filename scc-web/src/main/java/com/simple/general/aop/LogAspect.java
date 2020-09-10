@@ -3,8 +3,11 @@ package com.simple.general.aop;
 import com.alibaba.fastjson.JSON;
 import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.dao.OperateLogDao;
+import com.simple.general.dao.UserLogDao;
 import com.simple.general.entity.OperateLog;
+import com.simple.general.entity.User;
 import com.simple.general.utils.DateUtils;
+import com.simple.general.utils.HttpRequestUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -14,6 +17,7 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,10 +33,12 @@ public class LogAspect {
 
     final OperateLogDao operateLogDao;
 
-    public LogAspect(OperateLogDao operateLogDao) {
-        this.operateLogDao = operateLogDao;
-    }
+    final UserLogDao userLogDao;
 
+    public LogAspect(OperateLogDao operateLogDao, UserLogDao userLogDao) {
+        this.operateLogDao = operateLogDao;
+        this.userLogDao = userLogDao;
+    }
 
     /**
      * 此处的切点是注解的方式，也可以用包名的方式达到相同的效果
@@ -54,11 +60,12 @@ public class LogAspect {
         HttpServletRequest request = (HttpServletRequest) requestAttributes
                 .resolveReference(RequestAttributes.REFERENCE_REQUEST);
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
+        User user = HttpRequestUtils.getUserFromSession(request.getSession());
         OperateLog operateLog = new OperateLog();
-        operateLog.setId(1234567);
+        operateLog.setId(userLogDao.getId());
         operateLog.setTimestamp(DateUtils.now());
-        operateLog.setRemoteHost("123456789");
-        operateLog.setUsername("tom");
+        operateLog.setRemoteHost(HttpRequestUtils.getRemoteAddress(request));
+        operateLog.setUsername(user.getUsername());
         OperationLogDetail annotation = signature.getMethod().getAnnotation(OperationLogDetail.class);
         if (annotation != null) {
             operateLog.setOperation(annotation.operation());
@@ -66,12 +73,15 @@ public class LogAspect {
         }
         // 这里保存日志
         System.out.println("记录日志:" + operateLog.toString());
-        operateLogDao.save(operateLog);
         try {
             res = joinPoint.proceed();
+            operateLog.setStatus("成功");
+            operateLogDao.save(operateLog);
             return res;
         } catch (Exception e) {
             System.out.println("LogAspect 操作失败：" + e.getMessage());
+            operateLog.setStatus("失败");
+            operateLogDao.save(operateLog);
             throw new RuntimeException(e.getMessage());
         }
     }

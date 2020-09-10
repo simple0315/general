@@ -1,12 +1,19 @@
 package com.simple.general.utils;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.simple.general.entity.User;
+import com.simple.general.entity.UserLog;
+import com.simple.general.exception.UserLoginException;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Enumeration;
 
-public class IpUtils {
+public class HttpRequestUtils {
 
     private static final String[] HEADERS = {
             "X-Forwarded-For",
@@ -25,26 +32,31 @@ public class IpUtils {
 
     /**
      * 判断ip是否为空，空返回true
-     * @param ip
-     * @return
+     *
+     * @param ip ip
+     * @return boolean
+     * @author wcy
+     * @date 2020/9/10 18:56
      */
-    public static boolean isEmptyIp(final String ip){
+    public static boolean isEmptyIp(final String ip) {
         return (ip == null || ip.length() == 0 || ip.trim().equals("") || "unknown".equalsIgnoreCase(ip));
     }
 
     /**
-     *  判断ip是否不为空，不为空返回true
+     * 判断ip是否不为空，不为空返回true
+     *
      * @param ip ip
      * @return boolean
      * @author Mr.Wu
      * @date 2020/5/19 01:04
      */
-    public static boolean isNotEmptyIp(final String ip){
+    public static boolean isNotEmptyIp(final String ip) {
         return !isEmptyIp(ip);
     }
 
     /**
-     *  获取客户端ip地址(可以穿透代理)
+     * 获取客户端ip地址(可以穿透代理)
+     *
      * @param request HttpServletRequest
      * @return java.lang.String
      * @author Mr.Wu
@@ -54,42 +66,51 @@ public class IpUtils {
         String ip = "";
         for (String header : HEADERS) {
             ip = request.getHeader(header);
-            if(isNotEmptyIp(ip)) {
+            if (isNotEmptyIp(ip)) {
                 break;
             }
         }
-        if(isEmptyIp(ip)){
+        if (isEmptyIp(ip)) {
             ip = request.getRemoteAddr();
         }
-        if(isNotEmptyIp(ip) && ip.contains(",")){
+        if (isNotEmptyIp(ip) && ip.contains(",")) {
             ip = ip.split(",")[0];
         }
-        if("0:0:0:0:0:0:0:1".equals(ip)){
+        if ("0:0:0:0:0:0:0:1".equals(ip)) {
             ip = "127.0.0.1";
         }
         return ip;
     }
 
     /**
-     *  获取本机的局域网ip地址，兼容Linux
+     * 获取本机的局域网ip地址，兼容Linux
+     *
      * @return java.lang.String
      * @author Mr.Wu
      * @date 2020/5/19 01:06
      */
-    public String getLocalHostIP() throws Exception{
+    public String getLocalHostIP() throws Exception {
         Enumeration<NetworkInterface> allNetInterfaces = NetworkInterface.getNetworkInterfaces();
         String localHostAddress = "";
-        while(allNetInterfaces.hasMoreElements()){
+        while (allNetInterfaces.hasMoreElements()) {
             NetworkInterface networkInterface = allNetInterfaces.nextElement();
             Enumeration<InetAddress> address = networkInterface.getInetAddresses();
-            while(address.hasMoreElements()){
+            while (address.hasMoreElements()) {
                 InetAddress inetAddress = address.nextElement();
-                if(inetAddress instanceof Inet4Address){
+                if (inetAddress instanceof Inet4Address) {
                     localHostAddress = inetAddress.getHostAddress();
                 }
             }
         }
         return localHostAddress;
+    }
+
+    public static User getUserFromSession(HttpSession session) {
+        Object user = session.getAttribute("user");
+        if (user == null) {
+            throw new UserLoginException();
+        }
+        return JSONObject.parseObject(JSON.toJSONString(user), User.class);
     }
 
 }

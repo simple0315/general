@@ -7,7 +7,7 @@ import com.simple.general.entity.UserLog;
 import com.simple.general.query.BaseQuery;
 import com.simple.general.service.SystemLogService;
 import com.simple.general.utils.DateUtils;
-import com.simple.general.utils.IpUtils;
+import com.simple.general.utils.HttpRequestUtils;
 import com.simple.general.utils.MongoConstUtils;
 import com.simple.general.vo.UserVO;
 import org.apache.commons.lang3.StringUtils;
@@ -50,7 +50,7 @@ public class SystemLogServiceImpl implements SystemLogService {
         userLog.setLoginTime(DateUtils.now());
         userLog.setLogoutTime(0);
         userLog.setSessionId(session.getId());
-        userLog.setRemoteHost(IpUtils.getRemoteAddress(request));
+        userLog.setRemoteHost(HttpRequestUtils.getRemoteAddress(request));
         userLogDao.save(userLog);
     }
 
@@ -80,7 +80,7 @@ public class SystemLogServiceImpl implements SystemLogService {
         if(user!=null){
             operateLog.setUsername(user.getUsername());
         }
-        operateLog.setRemoteHost(IpUtils.getRemoteAddress(request));
+        operateLog.setRemoteHost(HttpRequestUtils.getRemoteAddress(request));
         operateLog.setDetail(detail);
         operateLog.setOperation(operation);
         operateLog.setTimestamp(DateUtils.now());

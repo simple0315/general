@@ -33,4 +33,6 @@ public class OperateLog implements Serializable {
     private String detail;
 
     private Integer timestamp;
+
+    private String status;
 }
