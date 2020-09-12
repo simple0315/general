@@ -10,15 +10,11 @@ import com.simple.general.group.UpdateGroup;
 import com.simple.general.query.BaseQuery;
 import com.simple.general.response.ResponseResult;
 import com.simple.general.service.CameraService;
-import com.simple.general.service.SystemLogService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 /**
  * 摄像头
@@ -32,14 +28,11 @@ public class CameraController {
 
     private final CameraService cameraService;
 
-    private final SystemLogService systemLogService;
-
     private static final String OPERATION = "摄像头模块";
 
     @Autowired
-    public CameraController(CameraService cameraService, SystemLogService systemLogService) {
+    public CameraController(CameraService cameraService) {
         this.cameraService = cameraService;
-        this.systemLogService = systemLogService;
     }
 
     /**
@@ -53,9 +46,8 @@ public class CameraController {
     @OperationLogDetail(operation = OPERATION, detail = "添加摄像头")
     @RequiresPermissions("camera:save")
     @PostMapping("/manage")
-    public ResponseResult saveCamera(@Validated(SaveGroup.class) @RequestBody Camera camera, HttpServletRequest request, HttpSession session) {
+    public ResponseResult saveCamera(@Validated(SaveGroup.class) @RequestBody Camera camera) {
         cameraService.saveCamera(camera);
-//        systemLogService.saveOperateLog(request, session, OPERATION, "添加摄像头");
         return ResponseResult.simpleOk();
     }
 
@@ -70,9 +62,8 @@ public class CameraController {
     @OperationLogDetail(operation = OPERATION, detail = "修改摄像头")
     @RequiresPermissions("camera:update")
     @PutMapping("/manage")
-    public ResponseResult updateCamera(@Validated(UpdateGroup.class) @RequestBody Camera camera, HttpServletRequest request, HttpSession session) {
+    public ResponseResult updateCamera(@Validated(UpdateGroup.class) @RequestBody Camera camera) {
         cameraService.updateCamera(camera);
-//        systemLogService.saveOperateLog(request, session, OPERATION, "修改摄像头");
         return ResponseResult.simpleOk();
     }
 
@@ -84,15 +75,15 @@ public class CameraController {
      * @author Mr.Wu
      * @date 2020/5/16 21:10
      */
+    @OperationLogDetail(operation = OPERATION, detail = "删除摄像头")
     @RequiresPermissions("camera:delete")
     @PutMapping("/manage/delete")
-    public ResponseResult deleteCamera(@RequestBody JSONObject cameraObject, HttpServletRequest request, HttpSession session) {
+    public ResponseResult deleteCamera(@RequestBody JSONObject cameraObject) {
         JSONArray ids = cameraObject.getJSONArray("id");
         if (ids == null || ids.isEmpty()) {
             throw new ParameterException("id不能为空");
         }
         cameraService.deleteCamera(JSONArray.parseArray(ids.toJSONString(), Integer.class));
-        systemLogService.saveOperateLog(request, session, OPERATION, "删除摄像头");
         return ResponseResult.simpleOk();
     }
 

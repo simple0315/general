@@ -44,7 +44,12 @@ public class SystemLogServiceImpl implements SystemLogService {
         UserVO userVO = (UserVO) session.getAttribute("user");
         if (userVO != null) {
             userLog.setUserId(userVO.getId());
-            userLog.setUsername(userVO.getUsername());
+            String username = userVO.getUsername();
+            if (StringUtils.isNotBlank(username)) {
+                userLog.setUsername(username);
+            } else {
+                userLog.setUsername("--");
+            }
         }
         userLog.setId(userLogDao.getId());
         userLog.setLoginTime(DateUtils.now());
@@ -70,21 +75,6 @@ public class SystemLogServiceImpl implements SystemLogService {
             condition.and(MongoConstUtils.USERNAME).regex(name);
         }
         return userLogDao.pageList(condition, userLogQuery.getPageNo(), userLogQuery.getPageSize());
-    }
-
-    @Override
-    public void saveOperateLog(HttpServletRequest request, HttpSession session, String operation, String detail) {
-        UserVO user = (UserVO) session.getAttribute("user");
-        OperateLog operateLog = new OperateLog();
-        operateLog.setId(userLogDao.getId());
-        if(user!=null){
-            operateLog.setUsername(user.getUsername());
-        }
-        operateLog.setRemoteHost(HttpRequestUtils.getRemoteAddress(request));
-        operateLog.setDetail(detail);
-        operateLog.setOperation(operation);
-        operateLog.setTimestamp(DateUtils.now());
-        operateLogDao.save(operateLog);
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.simple.general.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.entity.Repository;
 import com.simple.general.exception.ParameterException;
 import com.simple.general.group.SaveGroup;
@@ -9,15 +10,11 @@ import com.simple.general.group.UpdateGroup;
 import com.simple.general.query.BaseQuery;
 import com.simple.general.response.ResponseResult;
 import com.simple.general.service.RepositoryService;
-import com.simple.general.service.SystemLogService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 /**
  * 人像库
@@ -31,14 +28,11 @@ public class RepositoryController {
 
     private final RepositoryService repositoryService;
 
-    private final SystemLogService systemLogService;
-
     private static final String OPERATION = "人像库模块";
 
     @Autowired
-    public RepositoryController(RepositoryService repositoryService, SystemLogService systemLogService) {
+    public RepositoryController(RepositoryService repositoryService) {
         this.repositoryService = repositoryService;
-        this.systemLogService = systemLogService;
     }
 
     /**
@@ -49,11 +43,11 @@ public class RepositoryController {
      * @author Mr.Wu
      * @date 2020/5/8 00:36
      */
+    @OperationLogDetail(operation = OPERATION, detail = "添加人像库")
     @RequiresPermissions("repository:save")
     @PostMapping("/manage")
-    public ResponseResult saveRepository(@Validated(SaveGroup.class) @RequestBody Repository repository, HttpServletRequest request, HttpSession session) {
+    public ResponseResult saveRepository(@Validated(SaveGroup.class) @RequestBody Repository repository) {
         repositoryService.saveRepository(repository);
-        systemLogService.saveOperateLog(request, session, OPERATION, "添加人像库");
         return ResponseResult.simpleOk();
     }
 
@@ -65,11 +59,11 @@ public class RepositoryController {
      * @author Mr.Wu
      * @date 2020/5/8 00:36
      */
+    @OperationLogDetail(operation = OPERATION, detail = "修改人像库")
     @RequiresPermissions("repository:update")
     @PutMapping("/manage")
-    public ResponseResult updateRepository(@Validated(UpdateGroup.class) @RequestBody Repository repository, HttpServletRequest request, HttpSession session) {
+    public ResponseResult updateRepository(@Validated(UpdateGroup.class) @RequestBody Repository repository) {
         repositoryService.updateRepository(repository);
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改人像库");
         return ResponseResult.simpleOk();
     }
 
@@ -81,15 +75,15 @@ public class RepositoryController {
      * @author Mr.Wu
      * @date 2020/5/8 00:36
      */
+    @OperationLogDetail(operation = OPERATION, detail = "删除人像库")
     @RequiresPermissions("repository:delete")
     @PutMapping("/manage/delete")
-    public ResponseResult deleteRepository(@RequestBody JSONObject repositoryObject, HttpServletRequest request, HttpSession session) {
+    public ResponseResult deleteRepository(@RequestBody JSONObject repositoryObject) {
         JSONArray ids = repositoryObject.getJSONArray("id");
         if (ids == null || ids.isEmpty()) {
             throw new ParameterException("id不能为空");
         }
         repositoryService.deleteRepository(JSONArray.parseArray(ids.toJSONString(), Integer.class));
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改人像库");
         return ResponseResult.simpleOk();
     }
 

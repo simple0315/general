@@ -1,20 +1,17 @@
 package com.simple.general.controller;
 
+import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.entity.ImageInfo;
 import com.simple.general.group.SaveGroup;
 import com.simple.general.group.UpdateGroup;
 import com.simple.general.query.ImageQuery;
 import com.simple.general.response.ResponseResult;
 import com.simple.general.service.ImageInfoService;
-import com.simple.general.service.SystemLogService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 /**
  * 人像
@@ -28,14 +25,12 @@ public class ImageInfoController {
 
     private final ImageInfoService imageInfoService;
 
-    private final SystemLogService systemLogService;
 
     private static final String OPERATION = "人像模块";
 
     @Autowired
-    public ImageInfoController(ImageInfoService imageInfoService, SystemLogService systemLogService) {
+    public ImageInfoController(ImageInfoService imageInfoService) {
         this.imageInfoService = imageInfoService;
-        this.systemLogService = systemLogService;
     }
 
     /**
@@ -46,11 +41,11 @@ public class ImageInfoController {
      * @author Mr.Wu
      * @date 2020/5/9 01:05
      */
+    @OperationLogDetail(operation = OPERATION, detail = "上传人像")
     @RequiresPermissions("image:save")
     @PostMapping("/manage")
-    public ResponseResult saveImageInfo(@Validated(SaveGroup.class) @RequestBody ImageInfo imageInfo, HttpServletRequest request, HttpSession session) {
+    public ResponseResult saveImageInfo(@Validated(SaveGroup.class) @RequestBody ImageInfo imageInfo) {
         imageInfoService.saveImageInfo(imageInfo);
-        systemLogService.saveOperateLog(request, session, OPERATION, "上传人像");
         return ResponseResult.simpleOk();
     }
 
@@ -62,11 +57,11 @@ public class ImageInfoController {
      * @author Mr.Wu
      * @date 2020/5/9 01:05
      */
+    @OperationLogDetail(operation = OPERATION, detail = "修改人像")
     @RequiresPermissions("image:update")
     @PutMapping("/manage")
-    public ResponseResult updateImageInfo(@Validated(UpdateGroup.class) @RequestBody ImageInfo imageInfo, HttpServletRequest request, HttpSession session) {
+    public ResponseResult updateImageInfo(@Validated(UpdateGroup.class) @RequestBody ImageInfo imageInfo) {
         imageInfoService.updateImageInfo(imageInfo);
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改人像");
         return ResponseResult.simpleOk();
     }
 
@@ -78,11 +73,11 @@ public class ImageInfoController {
      * @author Mr.Wu
      * @date 2020/5/9 01:05
      */
+    @OperationLogDetail(operation = OPERATION, detail = "删除人像")
     @RequiresPermissions("image:delete")
     @PutMapping("/manage/delete")
-    public ResponseResult deleteImageInfo(@RequestBody ImageQuery imageQuery, HttpServletRequest request, HttpSession session) {
+    public ResponseResult deleteImageInfo(@RequestBody ImageQuery imageQuery) {
         imageInfoService.deleteImageInfo(imageQuery);
-        systemLogService.saveOperateLog(request, session, OPERATION, "删除人像");
         return ResponseResult.simpleOk();
     }
 

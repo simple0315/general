@@ -1,7 +1,5 @@
 package com.simple.general.annotation;
 
-import com.mongodb.client.model.changestream.OperationType;
-
 import java.lang.annotation.*;
 
 /**

@@ -2,6 +2,7 @@ package com.simple.general.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.entity.Note;
 import com.simple.general.exception.ParameterException;
 import com.simple.general.group.SaveGroup;
@@ -16,9 +17,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 /**
  * 笔记
  *
@@ -31,14 +29,12 @@ public class NoteController {
 
     private final NoteService noteService;
 
-    private final SystemLogService systemLogService;
 
     private static final String OPERATION = "笔记模块";
 
     @Autowired
-    public NoteController(NoteService noteService, SystemLogService systemLogService) {
+    public NoteController(NoteService noteService) {
         this.noteService = noteService;
-        this.systemLogService = systemLogService;
     }
 
     /**
@@ -49,11 +45,11 @@ public class NoteController {
      * @author Mr.Wu
      * @date 2020/5/17 19:12
      */
+    @OperationLogDetail(operation = OPERATION, detail = "添加笔记")
     @RequiresPermissions("note:save")
     @PostMapping("/manage")
-    public ResponseResult saveNote(@Validated(SaveGroup.class) @RequestBody Note note, HttpServletRequest request, HttpSession session) {
+    public ResponseResult saveNote(@Validated(SaveGroup.class) @RequestBody Note note) {
         noteService.saveNote(note);
-        systemLogService.saveOperateLog(request, session, OPERATION, "添加笔记");
         return ResponseResult.simpleOk();
     }
 
@@ -65,11 +61,11 @@ public class NoteController {
      * @author Mr.Wu
      * @date 2020/5/17 19:12
      */
+    @OperationLogDetail(operation = OPERATION, detail = "修改笔记")
     @RequiresPermissions("note:update")
     @PutMapping("/manage")
-    public ResponseResult updateNote(@Validated(UpdateGroup.class) @RequestBody Note note, HttpServletRequest request, HttpSession session) {
+    public ResponseResult updateNote(@Validated(UpdateGroup.class) @RequestBody Note note) {
         noteService.updateNote(note);
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改笔记");
         return ResponseResult.simpleOk();
     }
 
@@ -81,15 +77,15 @@ public class NoteController {
      * @author Mr.Wu
      * @date 2020/5/17 19:12
      */
+    @OperationLogDetail(operation = OPERATION, detail = "删除笔记")
     @RequiresPermissions("note:delete")
     @PutMapping("/manage/delete")
-    public ResponseResult deleteNote(@RequestBody JSONObject noteObject, HttpServletRequest request, HttpSession session) {
+    public ResponseResult deleteNote(@RequestBody JSONObject noteObject) {
         JSONArray ids = noteObject.getJSONArray("id");
         if (ids == null || ids.isEmpty()) {
             throw new ParameterException("id不能为空");
         }
         noteService.deleteNote(JSONArray.parseArray(ids.toJSONString(), Integer.class));
-        systemLogService.saveOperateLog(request, session, OPERATION, "删除笔记");
         return ResponseResult.simpleOk();
     }
 

@@ -9,6 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * 日志
+ *
+ * @author Mr.Wu
+ * @date 2020/9/10 23:40
+ */
 @RestController
 @RequestMapping("/system")
 public class SystemLogController {
@@ -47,6 +53,5 @@ public class SystemLogController {
         Page<OperateLog> operateLogPage = systemLogService.pageListOperateLogs(baseQuery);
         return ResponseResult.ok(operateLogPage.getContent(), operateLogPage.getTotalElements());
     }
-
 
 }

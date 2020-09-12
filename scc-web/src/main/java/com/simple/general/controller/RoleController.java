@@ -2,6 +2,7 @@ package com.simple.general.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.entity.Role;
 import com.simple.general.exception.ParameterException;
 import com.simple.general.group.SaveGroup;
@@ -16,8 +17,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -32,14 +31,11 @@ public class RoleController {
 
     private final RoleService roleService;
 
-    private final SystemLogService systemLogService;
-
     private static final String OPERATION = "角色模块";
 
     @Autowired
-    public RoleController(RoleService roleService, SystemLogService systemLogService) {
+    public RoleController(RoleService roleService) {
         this.roleService = roleService;
-        this.systemLogService = systemLogService;
     }
 
     /**
@@ -50,11 +46,11 @@ public class RoleController {
      * @author Mr.Wu
      * @date 2020/4/27 00:00
      */
+    @OperationLogDetail(operation = OPERATION, detail = "添加角色")
     @RequiresPermissions("role:save")
     @PostMapping("/manage")
-    public ResponseResult addRole(@Validated(SaveGroup.class) @RequestBody Role role, HttpServletRequest request, HttpSession session) {
+    public ResponseResult addRole(@Validated(SaveGroup.class) @RequestBody Role role) {
         roleService.addRole(role);
-        systemLogService.saveOperateLog(request, session, OPERATION, "添加角色");
         return ResponseResult.simpleOk();
     }
 
@@ -66,11 +62,11 @@ public class RoleController {
      * @author Mr.Wu
      * @date 2020/4/27 00:00
      */
+    @OperationLogDetail(operation = OPERATION, detail = "修改角色")
     @RequiresPermissions("role:update")
     @PutMapping("/manage")
-    public ResponseResult updateRole(@Validated(UpdateGroup.class) @RequestBody Role role, HttpServletRequest request, HttpSession session) {
+    public ResponseResult updateRole(@Validated(UpdateGroup.class) @RequestBody Role role) {
         roleService.updateRole(role);
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改角色");
         return ResponseResult.simpleOk();
     }
 
@@ -82,15 +78,15 @@ public class RoleController {
      * @author Mr.Wu
      * @date 2020/4/27 00:00
      */
+    @OperationLogDetail(operation = OPERATION, detail = "删除角色")
     @RequiresPermissions("role:delete")
     @PutMapping("/manage/delete")
-    public ResponseResult deleteRole(@Validated @RequestBody JSONObject roleObject, HttpServletRequest request, HttpSession session) {
+    public ResponseResult deleteRole(@Validated @RequestBody JSONObject roleObject) {
         JSONArray roleIds = roleObject.getJSONArray("id");
         if (roleIds == null || roleIds.isEmpty()) {
             throw new ParameterException("id不能为空");
         }
         roleService.deleteRole(JSONArray.parseArray(roleIds.toJSONString(), Integer.class));
-        systemLogService.saveOperateLog(request, session, OPERATION, "删除角色");
         return ResponseResult.simpleOk();
     }
 

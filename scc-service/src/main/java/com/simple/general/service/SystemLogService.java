@@ -46,18 +46,6 @@ public interface SystemLogService {
     Page<UserLog> pageListUserLogs(BaseQuery userLogQuery);
 
     /**
-     * 设置操作日志信息
-     *
-     * @param request   request
-     * @param session sessionId
-     * @param operation 模块
-     * @param detail    细节
-     * @author Mr.Wu
-     * @date 2020/5/19 00:40
-     */
-    void saveOperateLog(HttpServletRequest request, HttpSession session, String operation, String detail);
-
-    /**
      * 分页查询用户操作日志
      *
      * @param operateLogQuery 条件

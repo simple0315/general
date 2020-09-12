@@ -2,6 +2,7 @@ package com.simple.general.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.simple.general.annotation.OperationLogDetail;
 import com.simple.general.entity.User;
 import com.simple.general.exception.ParameterException;
 import com.simple.general.group.QueryGroup;
@@ -46,7 +47,6 @@ public class UserController {
 
     private static final String OPERATION = "用户模块";
 
-
     @Autowired
     public UserController(UserService userService, SystemLogService systemLogService) {
         this.userService = userService;
@@ -61,11 +61,11 @@ public class UserController {
      * @author Mr.Wu
      * @date 2020/4/12 18:42
      */
+    @OperationLogDetail(operation = OPERATION,detail = "添加用户")
     @RequiresPermissions("user:save")
     @PostMapping("/manage")
-    public ResponseResult saveUser(@Validated(SaveGroup.class) @RequestBody User user, HttpServletRequest request, HttpSession session) {
+    public ResponseResult saveUser(@Validated(SaveGroup.class) @RequestBody User user) {
         userService.saveUser(user);
-        systemLogService.saveOperateLog(request, session, OPERATION, "添加用户");
         return ResponseResult.simpleOk();
     }
 
@@ -77,11 +77,11 @@ public class UserController {
      * @author Mr.Wu
      * @date 2020/4/25 22:44
      */
+    @OperationLogDetail(operation = OPERATION,detail = "修改用户")
     @RequiresPermissions("user:update")
     @PutMapping("/manage")
-    public ResponseResult updateUser(@Validated(UpdateGroup.class) @RequestBody User user, HttpServletRequest request, HttpSession session) {
+    public ResponseResult updateUser(@Validated(UpdateGroup.class) @RequestBody User user) {
         userService.updateUser(user);
-        systemLogService.saveOperateLog(request, session, OPERATION, "修改用户");
         return ResponseResult.simpleOk();
     }
 
@@ -93,15 +93,15 @@ public class UserController {
      * @author Mr.Wu
      * @date 2020/4/25 22:54
      */
+    @OperationLogDetail(operation = OPERATION,detail = "删除用户")
     @RequiresPermissions("user:delete")
     @PutMapping("/manage/delete")
-    public ResponseResult deleteUser(@RequestBody JSONObject userObject, HttpServletRequest request, HttpSession session) {
+    public ResponseResult deleteUser(@RequestBody JSONObject userObject) {
         JSONArray userIds = userObject.getJSONArray("id");
         if (userIds == null || userIds.isEmpty()) {
             throw new ParameterException("id不能为空");
         }
         userService.deleteUser(JSONArray.parseArray(userIds.toJSONString(), Integer.class));
-        systemLogService.saveOperateLog(request, session, OPERATION, "删除用户");
         return ResponseResult.simpleOk();
     }
 
