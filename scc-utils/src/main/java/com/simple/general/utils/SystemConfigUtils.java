@@ -16,7 +16,7 @@ import java.util.Properties;
 @Slf4j
 public class SystemConfigUtils {
 
-    private static Map<String, String> configures = new HashMap<>();
+    private static final Map<String, String> CONFIGURES = new HashMap<>();
 
     static {
         loadProperties();
@@ -36,7 +36,7 @@ public class SystemConfigUtils {
             Properties propertyFiles = new Properties();
             propertyFiles.load(inputStream);
             for (Object key : propertyFiles.keySet()) {
-                configures.put(key.toString(), propertyFiles.getProperty(key.toString()));
+                CONFIGURES.put(key.toString(), propertyFiles.getProperty(key.toString()));
             }
         } catch (IOException e) {
             log.error(e.getMessage());
@@ -94,7 +94,7 @@ public class SystemConfigUtils {
      * @date 2020/4/12 00:01
      */
     public static String getConfig(String configKey) {
-        return configures.get(configKey);
+        return CONFIGURES.get(configKey);
     }
 
     /**
@@ -107,7 +107,7 @@ public class SystemConfigUtils {
      * @date 2020/4/12 00:01
      */
     public static String getConfig(String configKey, String defaultValue) {
-        String key = configures.get(configKey);
+        String key = CONFIGURES.get(configKey);
         if (key == null || "".equals(key.trim())) {
             return defaultValue;
         }
@@ -123,7 +123,7 @@ public class SystemConfigUtils {
      * @date 2020/4/12 00:03
      */
     public static boolean contentKey(String configKey) {
-        return configures.containsKey(configKey);
+        return CONFIGURES.containsKey(configKey);
     }
 
     public static void main(String[] args) {

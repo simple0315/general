@@ -9,3 +9,5 @@ spring:
 server:
   port: 12333
   context-path: /cloud/resource
+logging:
+  file: general.log
