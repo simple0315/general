@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: general
+  aop:
+    auto: true
+server:
+  port: 12333
+  context-path: /cloud/resource
+logging:
+  file: general.log

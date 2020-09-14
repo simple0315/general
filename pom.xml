@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>scc-service</module>
-        <module>scc-web</module>
-        <module>scc-utils</module>
-        <module>scc-dao</module>
-        <module>scc-model</module>
-        <module>scc-demo</module>
+        <module>web</module>
+        <module>service</module>
+        <module>dao</module>
+        <module>model</module>
+        <module>utils</module>
+        <module>demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
