@@ -1,2 +1,5 @@
 server:
   port: 12334
+spring:
+  profiles:
+    active: E:\general\config

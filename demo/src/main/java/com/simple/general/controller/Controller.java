@@ -42,7 +42,7 @@ public class Controller {
         JSONObject jsonObject1 = new JSONObject();
         jsonObject1.put("name", "jack");
         List<JSONObject> list1 = Arrays.asList(jsonObject, jsonObject1);
-        redisUtils.lSet("test111112345", list1);
+        redisUtils.lSet("test12345", list1);
     }
 
     @GetMapping("/login")

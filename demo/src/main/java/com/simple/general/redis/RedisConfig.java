@@ -21,7 +21,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * @date 2020/9/13 22:47
  */
 @Configuration
-@PropertySource(value = {"classpath:/redis.properties","file:${spring.profiles.path}/redis.properties"}, ignoreResourceNotFound = true)
+@PropertySource(value = {"classpath:/redis.properties", "file:${spring.profiles.active}/redis.properties"}, ignoreResourceNotFound = true)
 public class RedisConfig {
 
     @Value("${spring.redis.host}")
@@ -40,9 +40,9 @@ public class RedisConfig {
     private int maxActive;
     @Value("${spring.redis.testOnBorrow}")
     private boolean testOnBorrow;
+
     @Bean
     JedisConnectionFactory jedisConnectionFactory() {
-        System.out.println(host);
         //  单点配置
         JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
         jedisPoolConfig.setMaxIdle(maxIdle);
@@ -53,7 +53,6 @@ public class RedisConfig {
         JedisConnectionFactory redisConnectionFactory = new JedisConnectionFactory(jedisPoolConfig);
         redisConnectionFactory.setPassword(password);
         redisConnectionFactory.setHostName(host);
-        System.out.println(host);
         redisConnectionFactory.setPort(port);
         return redisConnectionFactory;
     }
